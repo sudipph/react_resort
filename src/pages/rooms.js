@@ -1,15 +1,14 @@
 import React from 'react';
+import Hero from "../components/Hero"
+import Banner from '../components/Banner'
+import { Link } from 'react-router-dom'
 
-interface Props {
-
-}
-
-const rooms: React.FC<Props> = (props) => {
-  return (
-    <div>
-      from room
-    </div>
-  );
+function rooms() {
+  return <Hero hero="roomsHero">
+  <Banner title="our rooms">
+  <Link to="/" className="btn-primary"> return home</Link>
+  </Banner>
+  </Hero>
 }
 
 export default rooms;
